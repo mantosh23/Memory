@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" id="Y6W-OH-hqX" customClass="IntroViewController" customModule="Memory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF3-wX-2DM">
+                                <rect key="frame" x="16" y="148" width="361" height="71.666666666666686"/>
+                                <string key="text">Preserve your memories
+Share your story</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UR-46-fN5">
+                                <rect key="frame" x="55" y="721" width="283" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Qg-gb-XfM"/>
+                                    <constraint firstAttribute="width" constant="283" id="JTm-LQ-KkD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yYy-tt-LY5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-Mn-4cl">
+                                <rect key="frame" x="75" y="793" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-gv-CGl">
+                                <rect key="frame" x="246" y="786" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign in">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3nZ-1D-rCc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introscreenimage" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-n0-4lc">
+                                <rect key="frame" x="0.0" y="260" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="6jN-tC-Xg6"/>
+                                    <constraint firstAttribute="height" constant="393" id="Feg-gV-H5Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.94921875" green="0.94921875" blue="0.966796875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="0UR-46-fN5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="55" id="0OH-pH-aV4"/>
+                            <constraint firstItem="dPf-n0-4lc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9l7-zW-HSR"/>
+                            <constraint firstItem="xF3-wX-2DM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="BV1-sG-hxZ" userLabel="Preserve your memories Share your story.top = Safe Area.top"/>
+                            <constraint firstItem="gS2-gv-CGl" firstAttribute="leading" secondItem="vuU-Mn-4cl" secondAttribute="trailing" constant="-8" id="BZC-iv-9mg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xF3-wX-2DM" secondAttribute="trailing" constant="16" id="C9H-GM-leC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dPf-n0-4lc" secondAttribute="trailing" id="Ccf-re-ivD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dPf-n0-4lc" secondAttribute="trailing" id="Dtp-gL-Oeb"/>
+                            <constraint firstItem="dPf-n0-4lc" firstAttribute="top" secondItem="xF3-wX-2DM" secondAttribute="bottom" constant="40.333333333333314" id="EA1-Dh-v6G"/>
+                            <constraint firstItem="dPf-n0-4lc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="KNX-Ah-rWH"/>
+                            <constraint firstItem="vuU-Mn-4cl" firstAttribute="top" secondItem="0UR-46-fN5" secondAttribute="bottom" constant="22" id="MF5-xL-ViN"/>
+                            <constraint firstItem="0UR-46-fN5" firstAttribute="top" secondItem="dPf-n0-4lc" secondAttribute="bottom" constant="68" id="RwN-2V-WlS"/>
+                            <constraint firstItem="xF3-wX-2DM" firstAttribute="leading" secondItem="dPf-n0-4lc" secondAttribute="trailing" constant="-377" id="USx-Xt-ayA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0UR-46-fN5" secondAttribute="trailing" constant="55" id="aZo-hZ-WzO"/>
+                            <constraint firstItem="dPf-n0-4lc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="c3q-Lv-gZB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gS2-gv-CGl" secondAttribute="trailing" constant="71" id="qwu-7L-Va2"/>
+                            <constraint firstItem="xF3-wX-2DM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="t49-fv-gJq"/>
+                            <constraint firstItem="gS2-gv-CGl" firstAttribute="top" secondItem="0UR-46-fN5" secondAttribute="bottom" constant="15" id="tka-ca-sC9"/>
+                            <constraint firstItem="vuU-Mn-4cl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="ub0-Wa-X5Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="introscreenimage" width="626" height="606"/>
+    </resources>
+</document>
